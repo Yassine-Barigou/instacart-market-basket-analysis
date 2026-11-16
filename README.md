@@ -45,6 +45,14 @@ $$\text{Lift}(A \implies B) = \frac{P(B \mid A)}{P(B)} = \frac{\text{Support}(A 
 
 ---
 
+## 📂 Repository Structure & Generated Outputs
+* `Association_Rule_Learning.ipynb`: The core Jupyter Notebook containing the full PySpark pipeline, ETL, EDA, and FP-Growth model training.
+* `files/`: Contains the exported output files generated from the model pipeline:
+  * `itemsets_frequents.csv`: Extracted frequent product itemsets along with their calculated support values.
+  * `regles_association.csv`: Generated association rules including antecedents, consequents, support, confidence, and lift metrics.
+
+---
+
 ## 🛠️ Tech Stack & Libraries
 * **Distributed Computing:** Apache Spark, PySpark SQL, PySpark MLlib (`FPGrowth`)
 * **Data Processing & Analysis:** Pandas, NumPy
